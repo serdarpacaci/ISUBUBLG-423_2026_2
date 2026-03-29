@@ -1,0 +1,23 @@
+services:
+  redis.db.sepet:
+    restart: always
+    image: redis:7.0-alpine
+    container_name: redis.db.container
+    ports:
+      - "21312:6379"
+    volumes:
+      - redis.db.sepet.volume:/data
+  redis.db.sepet.ui:
+    restart: always
+    image: rediscommander/redis-commander:latest
+    container_name: redis.db.sepet.ui.container
+    ports:
+      - "21313:8081"
+    environment:
+      REDIS_HOST: redis.db.sepet
+      REDIS_PORT: 21312
+      HTTP_USER: isubu
+      HTTP_PASSWORD: 123456
+
+volumes:
+  redis.db.sepet.volume:
