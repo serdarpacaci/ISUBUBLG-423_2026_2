@@ -1,0 +1,53 @@
+﻿using IsubuSatis.Indirim.Models;
+using IsubuSatis.Indirim.Services;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace IsubuSatis.Indirim.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class IndirimController : ControllerBase
+    {
+        private readonly IIndirimService _indirimService;
+
+        public IndirimController(IIndirimService indirimService)
+        {
+            _indirimService = indirimService;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var sonuc = await _indirimService.GetAllIndirim();
+
+            return Ok(sonuc);
+        }
+
+        [HttpGet("id")]
+        public async Task<IActionResult> GetbyId(int id)
+        {
+            var sonuc = await _indirimService.GetById(id);
+
+            return Ok(sonuc);
+        }
+
+        [HttpPost]
+        public async Task Kaydet(IndirimDto indirim)
+        {
+            await _indirimService.Kaydet(indirim);
+        }
+
+        [HttpPut]
+        public async Task Guncelle(IndirimDto indirim)
+        {
+            await _indirimService.Guncelle(indirim);
+        }
+
+        [HttpDelete]
+        public async Task Sil(int id)
+        {
+            await _indirimService.Sil(id);
+        }
+    }
+}
