@@ -15,6 +15,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatis.Indirim", "Isubu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatis.OdemeService", "IsubuSatis.OdemeService\IsubuSatis.OdemeService.csproj", "{9E78BA21-44BC-16CD-D01E-CF000A263F3A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Siparis", "Siparis", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatis.Siparis.Domain", "IsubuSatis.Siparis.Domain\IsubuSatis.Siparis.Domain.csproj", "{81CBB4D2-2F73-4DF7-8263-AC9CC14241DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatis.Siparis.Application", "IsubuSatis.Siparis.Application\IsubuSatis.Siparis.Application.csproj", "{F134B3E1-846D-4746-A24A-5F1DA704A7FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatis.Siparis.Persistence", "IsubuSatis.Siparis.Persistence\IsubuSatis.Siparis.Persistence.csproj", "{DEC3A510-5480-4B8D-A4DC-14AD5FC10115}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatis.Siparis.Api", "IsubuSatis.Siparis.Api\IsubuSatis.Siparis.Api.csproj", "{095A24F9-31AA-4134-8162-CC34B4A2ECD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,9 +55,31 @@ Global
 		{9E78BA21-44BC-16CD-D01E-CF000A263F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E78BA21-44BC-16CD-D01E-CF000A263F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E78BA21-44BC-16CD-D01E-CF000A263F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81CBB4D2-2F73-4DF7-8263-AC9CC14241DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81CBB4D2-2F73-4DF7-8263-AC9CC14241DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81CBB4D2-2F73-4DF7-8263-AC9CC14241DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81CBB4D2-2F73-4DF7-8263-AC9CC14241DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F134B3E1-846D-4746-A24A-5F1DA704A7FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F134B3E1-846D-4746-A24A-5F1DA704A7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F134B3E1-846D-4746-A24A-5F1DA704A7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F134B3E1-846D-4746-A24A-5F1DA704A7FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEC3A510-5480-4B8D-A4DC-14AD5FC10115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC3A510-5480-4B8D-A4DC-14AD5FC10115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC3A510-5480-4B8D-A4DC-14AD5FC10115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC3A510-5480-4B8D-A4DC-14AD5FC10115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{095A24F9-31AA-4134-8162-CC34B4A2ECD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{095A24F9-31AA-4134-8162-CC34B4A2ECD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{095A24F9-31AA-4134-8162-CC34B4A2ECD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{095A24F9-31AA-4134-8162-CC34B4A2ECD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{81CBB4D2-2F73-4DF7-8263-AC9CC14241DE} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F134B3E1-846D-4746-A24A-5F1DA704A7FC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{DEC3A510-5480-4B8D-A4DC-14AD5FC10115} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{095A24F9-31AA-4134-8162-CC34B4A2ECD9} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DB854089-CCA3-4170-BE65-4E66C623E9AD}
