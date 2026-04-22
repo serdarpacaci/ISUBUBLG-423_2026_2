@@ -7,7 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+
     <ProjectReference Include="..\IsubuSatis.Siparis.Domain\IsubuSatis.Siparis.Domain.csproj" />
+
+    <ProjectReference Include="..\IsubuSatis.Siparis.Persistence\IsubuSatis.Siparis.Persistence.csproj" />
   </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MassTransit" Version="8.5.5" />
+		<PackageReference Include="MassTransit.RabbitMQ" Version="8.5.5" />
+		<PackageReference Include="MediatR" Version="13.1.0" />
+	</ItemGroup>
 
 </Project>

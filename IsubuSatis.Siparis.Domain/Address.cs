@@ -4,7 +4,7 @@ namespace IsubuSatis.Siparis.Domain
 {
     [Table("Address")]
 
-    public class Address
+    public class Address : BaseEntity<int>
     {
         public string Sehir { get; set; }
         public string Ilce { get; set; }

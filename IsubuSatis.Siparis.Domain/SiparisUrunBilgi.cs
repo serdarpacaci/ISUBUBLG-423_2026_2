@@ -4,7 +4,7 @@ namespace IsubuSatis.Siparis.Domain
 {
     [Table("SiparisUrunBilgi")]
 
-    public class SiparisUrunBilgi
+    public class SiparisUrunBilgi :BaseEntity<int>
     {
         public string UrunAdi { get; set; }
         public string UrunId { get; set; }
